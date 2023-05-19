@@ -49,18 +49,12 @@
     width: 95%;
 }
 @media only screen and (max-width: 765px) {
-    body {
-      background-color: lightblue;
-    }
     .signCont{
         width: 100%;
         flex-wrap: wrap;   
     }
   }
 @media only screen and (max-width: 422px) {
-    body {
-      background-color: lightcoral;
-    }
     .signCont{
         width: 100%;
         flex-wrap: wrap;   
