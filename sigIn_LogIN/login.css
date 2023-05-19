@@ -1,0 +1,30 @@
+.loginPage{
+    display: flex;
+    flex-direction: column;
+}
+.logCont{
+    width: 50%;
+    margin: 0 auto;
+}
+.logCont>form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.logCont>form input{
+    width: 50%;
+    padding: 15px 25px;
+}
+.signBtn{
+    padding: 10px 20px;
+    border: none;
+    background-color: yellowgreen;
+    border-radius: 5px;
+}
+.createBtn{
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    border: none;
+    padding: 10px 25px;
+}
