@@ -3,8 +3,10 @@
     flex-direction: column;
 }
 .logCont{
-    width: 50%;
     margin: 0 auto;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .logCont>form{
     display: flex;
@@ -12,8 +14,7 @@
     flex-wrap: wrap;
 }
 .logCont>form input{
-    width: 50%;
-    padding: 15px 25px;
+    padding: 10px 25px;
 }
 .signBtn{
     padding: 10px 20px;
@@ -21,10 +22,36 @@
     background-color: yellowgreen;
     border-radius: 5px;
 }
+.signBtn:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
 .createBtn{
     margin-left: 15px;
     border-radius: 5px;
     background-color: yellowgreen;
     border: none;
     padding: 10px 25px;
+    text-decoration: none;
+    color: black;
 }
+.createBtn:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 338px) {
+    body {
+      background-color: lightblue;
+    }
+    .logBtns{
+        display: flex;
+        flex-direction: column;
+    }
+    .createBtn{
+        margin: 10px 0;
+        text-align: center;
+    }
+  }

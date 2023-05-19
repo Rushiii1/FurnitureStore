@@ -13,13 +13,14 @@
     <div class="loginPage">
         <div class="logCont">
             <h1>Login</h1>
+            <p id="wrongText"></p>
             <form>
                 <input type="email" id="email" placeholder="Email Address"><br>
                 <input type="password" id="password" placeholder="password"><br>
-                <a href="">Forgot your password ?</a><br>
+                <a href="signup.html">Forgot your password ?</a><br>
                 <div class="logBtns">
-                    <button class="signBtn">Signin</button>
-                    <button class="createBtn">Create an account</button>
+                    <button class="signBtn" onclick="loginUser()">Sign In</button>
+                    <a href="signup.html" target="_blank" class="createBtn">Create an account</a>
                 </div>
             </form>
         </div>
