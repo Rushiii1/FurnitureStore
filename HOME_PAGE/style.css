@@ -1,0 +1,291 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    /* width: 95%;
+    margin: auto; */
+}
+.container{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* header  */
+header{
+    min-height: 70px;
+    padding-bottom: 20px;
+}
+.head{
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+/* navBar */
+header a{
+    /* color: #ffffff; */
+    text-decoration: none;
+    font-size: 20px;
+}
+header ul{
+    margin: 0px;
+    padding: 0px;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 15px 50px 15px 20px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+header #brading{
+    float: left;
+} 
+header nav {
+    float: inline-start;
+    margin-left: 200px;
+    margin-top: -45px;
+}
+#input_icon{
+    float: right;
+    margin-top: 12px;
+    margin-right: 30px;
+    
+}
+#input-icon i{
+    margin-right: 15px;
+}
+input{
+    margin-right: 10px;
+    background-color:#eaeaea;
+    width: 250px;
+    border-radius: 18px;
+    border: none;
+    padding: 10PX;
+    margin-left: 350px;
+    margin-top: 14px;
+}
+
+/* List  */
+#list-items li {
+    float: left;
+    display: inline;
+    padding: 15px 60px 15px 0px;
+    font-weight: bold;
+    color: black;
+    font-size: 23px;
+}
+
+#show-case{
+    width: 95%;
+    margin: auto;
+}
+
+/* Whats New?  */
+.deals{
+    margin-left: 40px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+
+/* cart section  */
+.grid-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Adjust as needed */
+    width: 95%;
+    margin: auto;
+    margin-top: 60px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;    
+    font-size: 18px;
+    margin-top: -30px;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    background-color: #e3e3e3;
+    border-radius: 3px;
+  }
+  
+  
+
+  #content{
+    padding: 20px;
+    margin-top: -40px;
+  }
+  button{
+    width: 100%;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  #show-img{
+    width: 100%;
+    margin-left: 50px;
+}
+.p-size{
+    font-size: 16px;
+}
+
+#parent-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 95%;
+    margin: auto;
+}
+#parent-img img{
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+/* Dinging cart section  */
+
+#parent-dining{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 95%;
+    margin: auto;
+   
+}
+#parent-dining img{
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    
+    
+}
+#parent-dining p{
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Strip  */
+.Strip {
+    width: 95%;
+    margin: auto;
+    padding: 10px 25px;
+    background-color: #E8EDF0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+    margin-right: 10px;    
+}
+.logo p {
+    font-weight: 600;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 40px   ;
+    font-size: 20px;
+}
+.category {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    justify-content: space-around;
+    margin-top: 50px;
+    gap: 15px;
+    width: 95%;
+    margin: auto;
+}
+.category div {
+    display: flex;
+    background-color: #efefef;
+    border-radius: 15px;
+}
+.category div div img {
+    width: 100%;
+}
+
+/* Footer  */
+.container{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* header  */
+footer{
+    min-height: 70px;
+    padding-bottom: 20px;
+    background-color:#3d3d3d;
+    color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+/* navBar */
+footer a{
+    /* color: #ffffff; */
+    text-decoration: none;
+    font-size: 20ppx;
+    color: #ffffff;
+}
+footer ul{
+    margin: 0px;
+    padding: 0px;
+}
+footer li{
+    float: left;
+    display: inline;
+    padding: 15px 50px 15px 20px;
+    /* font-weight: ; */
+    color: #ffffff;
+    font-size: 20px;
+}
+footer #brading{
+    float: left;
+} 
+footer nav {
+    float: inline-start;
+    margin-left: 200px;
+    margin-top: -45px;
+}
+#input_icon{
+    float: right;
+    margin-top: -17px;
+    margin-right: 30px;
+}
+#num{
+    margin-left: 20px;
+}
+
