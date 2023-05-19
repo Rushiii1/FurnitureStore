@@ -1,0 +1,130 @@
+#main{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#Head{
+    margin-left: 300px ;
+    font-family: 'Roboto', sans-serif;
+    font-size:40px ;
+    font-weight:bolder;
+
+    color: #404040;
+}
+
+#form{
+    /* border: 2px solid red; */
+    height: 400px;
+    width: 800px;
+    /* width: auto ; */
+    margin-left: 300px ;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#form{
+    display: flex;
+    grid-template-rows: repeat(4,1fr);
+    gap: 30px;
+    padding: 30px;
+    background-color: #f7f6f6;
+    
+}
+
+#First-name,#Last-name,#Phone,#E-MAIL,#Promocode{
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  height: 40px;
+    width: 80%;
+  margin-left: 20px;
+
+  text-decoration: none;
+
+  background-color: #f7f6f6;
+  border: 1px solid grey;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+
+    
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+
+
+
+  #apply{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 40px;
+    width: 310px;
+    margin-left: 20px;
+    
+    background-color: #ffcc01;
+
+    background: linear-gradient(to right, #ffcc01, #ff8d18);
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  /* border-radius: 4px; */
+
+  border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid #ff8d18;
+    padding: 10px 20px;
+    /* border-radius: 4px; */
+
+
+  }
+
+
+
+#right,#left{
+  width: 50%;
+  /* border: 2px solid red; */
+ 
+}
+
+
+#Total{
+  margin-top: 120px;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  color: #404040;
+  font-weight: 500;
+}
+#next-button{
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  cursor: pointer;
+  /* border: 2px solid red; */
+  margin-top: 28px;
+  height: 30px;
+}
+
+#next{
+ 
+  font-size:20px;
+  display: flex;
+  margin-left: 500px;
+  font-family: roboto;
+  justify-content: space-around;
+}
+#scroll{
+  border: none;
+  width: 65%;
+  margin-top: -10px;
+  margin-left: 330px;
+  height: 2px;
+  /* background-color: #000; */
+  background: linear-gradient(to right, #ff8d18, #f2f2f2);
+ 
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
