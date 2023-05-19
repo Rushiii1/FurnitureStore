@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Delivery</title>
+    <link rel="stylesheet" href="../Styles/Delivery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Mulish&family=Roboto:wght@300;500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Mulish&family=Roboto:wght@300;500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+   
+    <script src="../Script/Delivery.js" type="module"></script>
+</head>
+<body>
+
+    <div id="main"></div>
+    <div id="Head">Delivery Details</div>
+
+    <div id="form">
+
+        <div id="left">
+           
+            <input type="text" name="" id="First-name" placeholder="Address-1">
+            <input type="text" name="" id="Last-name" placeholder="Address-2">
+            <input type="text" name="" id="Phone" placeholder="Country">
+            <input type="text" name="" id="E-MAIL" placeholder="Zip Code">
+        </div>
+    
+        <div id="right">
+            <input type="text" name="" id="Promocode" placeholder="State">
+            <button id="apply">Please Select Payment Method</button>
+
+                 <div id="payment">
+                    <div id="head_payment">
+              <h6>Payment Method</h6>      
+            </div>
+            <div id="selection-payment"> 
+              <input type="radio" id="cash">
+              <h6>Cash On Delivery </h6>
+
+              <input type="radio" id="card">
+              <h6>Payment By Card</h6>
+            </div>
+            </div>
+              <h6 id="Total">Total ....................
+                <span id="amount">₹ 6786</span>
+            </h6>
+        </div>
+   
+        </div>
+        <div id="next">
+            <h6>3/3</h6>
+        <button id="next-button" >Order</button> 
+        
+        </div>
+
+        <hr id="scroll">
+
+
+        <div id="overlay" class="overlay">
+            <div class="input-container">
+                <h6 id="payment-head">Please Enter Your Card Details</h6>
+              <input type="text" id="name" placeholder="Enter Your Name ">
+              <input type="text" id="number" placeholder="Enter Your 14 Digit Card Number ">
+              <input type="text" id="cvv" placeholder="Enter Your CVV Number ">
+              <button id="closeInputButton">Submit</button>
+            </div>
+
+
+      
+       
+    
+</body>
+</html>
