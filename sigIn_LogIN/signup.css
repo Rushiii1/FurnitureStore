@@ -1,0 +1,77 @@
+.signupPage{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    /* border: 2px solid red; */
+}
+.signCont{
+    margin: 0 auto;
+    /* border: 2px solid black; */
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.signCont>form{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.signCont>form input{
+    padding: 10px 25px;
+}
+.signBtn{
+    padding: 10px 20px;
+    border: none;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.createBtn{
+    border-radius: 5px;
+    background-color: yellowgreen;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+.createBtn:hover{
+    background-color: green;
+    color: white;
+}
+.signBtn:hover{
+    background-color: green;
+    color: white;
+}
+.termsCondition{
+    width: 95%;
+}
+@media only screen and (max-width: 765px) {
+    .signCont{
+        width: 100%;
+        flex-wrap: wrap;   
+    }
+  }
+@media only screen and (max-width: 422px) {
+    .signCont{
+        width: 100%;
+        flex-wrap: wrap;   
+    }
+    .signCont>form input{
+        width: 70%;
+    }
+    .createBtn{
+        width: 70%;
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+    .signBtn{
+        width: 70%;
+        text-align: center;
+        margin: 0;
+    }
+
+  }
+  
