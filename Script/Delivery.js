@@ -2,6 +2,10 @@ const showInputButton = document.getElementById("card");
 // const closeInputButton = document.getElementById("card");
 const overlay = document.getElementById("overlay");
 
+
+var total=localStorage.getItem("amount");
+
+
 showInputButton.addEventListener("click", function() {
   overlay.style.display = "block";
 });
@@ -11,6 +15,8 @@ closeInputButton.addEventListener("click", function() {
 });
 
 let card_num=[];
+
+document.getElementById("amount").innerText="₹"+total; 
 
 document.getElementById("closeInputButton").addEventListener("click",proceed);
 
