@@ -133,6 +133,7 @@
       var cartList = JSON.parse(localStorage.getItem("cartlist")) || [];
       cartList.push(product);
       localStorage.setItem("cartlist", JSON.stringify(cartList));
+      window.location.href="./Cart.html";
 
       console.log("Product added to cart:", product);
     }

@@ -1,22 +1,29 @@
 // var val=  document.getElementById("quantityInput").value;
 
-function decreaseQuantity(){  
-    var quantityInput = document.getElementById("quantityInput");
-    var currentQuantity = parseInt(quantityInput.value);
-    if (currentQuantity >0) {
-        quantityInput.value = currentQuantity - 1;
-    }
-}
+// function decreaseQuantity(){  
+//     var quantityInput = document.getElementById("quantityInput");
+//     var currentQuantity = parseInt(quantityInput.value);
+//     if (currentQuantity >0) {
+//         quantityInput.value = currentQuantity - 1;
+//     }
+// }
 
-function increaseQuantity(){
-    var quantityInput = document.getElementById("quantityInput");
-    var currentQuantity = parseInt(quantityInput.value);
+// function increaseQuantity(){
+//     var quantityInput = document.getElementById("quantityInput");
+//     var currentQuantity = parseInt(quantityInput.value);
     
-    if (currentQuantity < 10) {
-      quantityInput.value = currentQuantity + 1;
-  }
-}
+//     if (currentQuantity < 10) {
+//       quantityInput.value = currentQuantity + 1;
+//   }
+// }
 
+// var Decrease = document.getElementById("Decrease");
+// Decrease.addEventListener("click",decreaseQuantity);
+
+// var Increase = document.getElementById("Increase");
+// Increase.addEventListener("click",increaseQuantity);
+
+    
 
 
 var  obj=[
@@ -40,98 +47,80 @@ var  obj=[
 
 ];
 
+// var Data=localStorage.getItem("cartlist");
+// console.log(Data);
 
-// function display(data){
-//     // document.getElementById("Products").innerHTML="";
-//     data.forEach(ele => {
+var targetElement = document.getElementById("Products");
 
-//         let first=document.createElement("div");
-//         first.setAttribute("id","First-Div");
+
+
+function display(data){ 
+    // document.getElementById("Products").innerHTML="";
+    data.forEach(ele => {
+  let Prod=document.createElement("div");
+  Prod.setAttribute("id","Product");
+        let first=document.createElement("div");
+        first.setAttribute("id","First-Div");
         
-//       let Image=document.createElement("img");      
-//       Image.setAttribute("id","Prod_img");
-//       Image.src=ele.img;
+      let Image=document.createElement("img");      
+      Image.setAttribute("id","Prod_img");
+      Image.src=ele.img;
 
-//       first.append(Image);
+      first.append(Image);
 
-//     //   console.log(ele.img);
+    //   console.log(ele.img);
 
 
-//       let second=document.createElement("div");
-//       second.setAttribute("id","Second-Div");
+      let second=document.createElement("div");
+      second.setAttribute("id","Second-Div");
       
-//       let Prod_head=document.createElement("div");
-//       Prod_head.setAttribute("id","Prod_Head");
-//       let title=document.createElement("h5");
-//       title.setAttribute("id","Prod_Title");
-//       title.innerText=ele.Title;
-//       Prod_head.append(title);
+      let Prod_head=document.createElement("div");
+      Prod_head.setAttribute("id","Prod_Head");
+      let title=document.createElement("h5");
+      title.setAttribute("id","Prod_Title");
+      title.innerText=ele.Title;
+      Prod_head.append(title);
 
-//       let Prod_disc=document.createElement("div");
-//       Prod_disc.setAttribute("id","Prod_disc")
+        
+      let amount=document.createElement("div");
+      amount.setAttribute("id","Amount");
+      amount.textContent="Amount :"+ele.Price+"₹";
 
-//       let dime=document.createElement("div");
-//       dime.setAttribute("id","Prod_Dime");
-
-//       let code=document.createElement("h6");
-//           code.setAttribute("id","Prod_code");
-//       code.innerText="Code :"+ ele.code;
-     
-//       let Prod_dime=document.createElement("h6");
-//       Prod_dime.setAttribute("id","prod_dimension");
-//       Prod_dime.innerText="Dimension :"+ ele.Dimension;
+      let Delete=document.createElement("button");
+      Delete.setAttribute("id","Delete");
+      Delete.innerText="X";
 
 
-//       let color=document.createElement("h6");
-//       color.setAttribute("id","Prod_Color");
-//       color.innerText="Color :"+ ele.Color;
+      let Quantity=document.createElement("div");
+      Quantity.setAttribute("id","Prod_quantity");
 
-//       dime.append(code,Prod_dime,color);
+      let increase_button=document.createElement("button");
+      increase_button.setAttribute("id","Increase");
 
+      let input=document.createElement("input");
+      input.setAttribute("id","quantityInput");
+      input.setAttribute("type","number");
+      input.setAttribute("value","1","10");
 
-//       let amount=document.createElement("div");
-//       amount.setAttribute("id","Amount");
-//       amount.textContent="Amount :"+ele.Price+"₹";
+      let decrease_button=document.createElement("button");
+      decrease_button.setAttribute("id","Decrease");
 
-//       let Delete=document.createElement("button");
-//       Delete.setAttribute("id","Delete");
-//       Delete.innerText="X";
+        Quantity.append(increase_button,input,decrease_button);    
+      second.append(Quantity,amount);
 
-
-//       let Quantity=document.createElement("div");
-//       Quantity.setAttribute("id","Prod_quantity");
-
-//       let increase_button=document.createElement("button");
-//       increase_button.setAttribute("id","Increase");
-
-//       let input=document.createElement("input");
-//       input.setAttribute("id","quantityInput");
-//       input.setAttribute("type","number");
-//       input.setAttribute("value","1","10");
-
-//       let decrease_button=document.createElement("button");
-//       decrease_button.setAttribute("id","Decrease");
-
-//         Quantity.append(increase_button,input,decrease_button);    
-//       second.append(Prod_head,Delete,dime,Quantity,amount);
-
-//       var product=document.createElement("div");
-//       product.setAttribute("id","product");
-//       product.append(first,second);
-
-      
+   
     
 
-//       console.log(obj);
-//       console.log(ele.Title);
-//       console.log(ele.Color);
+      // console.log(obj);
+      console.log(ele.name);
+      // console.log(ele.Color);/
     
+        Prod.append(first,second);
+      targetElement.append(first,second);
+    });
+  }
 
-//       document.querySelector("Body").append(product);
-//     });
-    
-// }
-// }
+
 
 
 // function display(data){
@@ -165,13 +154,13 @@ var  obj=[
 
 
 
-var targetElement = document.getElementById("Product");
+
 
 if (targetElement) {
   // Your code to append elements goes here
 
-
-// display(obj);
+  // display(Data);
+display(obj);
 
 
 } else {
@@ -185,5 +174,7 @@ document.getElementById("next-button").addEventListener("click",next);
 function next(){
   window.location.href="Information.html"
 }
+
+
 
 

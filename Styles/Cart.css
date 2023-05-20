@@ -25,10 +25,15 @@ padding-right: 20px;
 making cart item container//
 */
 
+#Products{
+    display: flex;
+    height: 700px;
+}
+
 #Product{
     display: flex;
     margin-left: 150px;
-    /* border: 2px solid grey; */
+    border: 2px solid grey;
     border-radius: 15px;
         background-color: #f8f8f8;
     font-family: 'Roboto', sans-serif;
@@ -36,11 +41,13 @@ color: #404040;
  height: 220px;
  width: 80%;
 margin-top: 10px;
+height: 300px;
+
 }
 
 #Prod_img{
-    height: 200px;
-    width: 200px;
+    /* height: 200px;
+    width: 200px; */
     border-radius: 10px;
         /* border: 2px solid red; */
     image-rendering: pixelated;
@@ -61,6 +68,7 @@ margin-top: 10px;
 
 
 #quantityInput {
+    cursor: pointer;
     width: 30px;
     height: 33px;
     border: none;
@@ -79,6 +87,7 @@ margin-top: 10px;
     border: none;
     width: 30px;
     height: 33px;
+    cursor: pointer;
     
 }
 
