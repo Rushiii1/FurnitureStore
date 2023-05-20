@@ -1,9 +1,10 @@
 var cartItems = JSON.parse(localStorage.getItem("cartlist")) || [];
 var total = 0
+var cartTotalElement = document.getElementById("cart-total");
 // Function to render the cart items on the page
 function renderCartItems() {
   var cartItemsContainer = document.getElementById("cart-items");
-  var cartTotalElement = document.getElementById("cart-total");
+ 
   cartItemsContainer.innerHTML = "";
  ;
 
@@ -32,24 +33,19 @@ function renderCartItems() {
 
 
   
-
-     
-
-
       var removeButton = document.createElement("button");
       removeButton.className = "remove-button";
       removeButton.textContent = "Remove";
       removeButton.addEventListener("click", function () {
-        removeCartItem(product);
+        removeCartItem(product,);
       });
       productItem.appendChild(removeButton);
 
-      cartItemsContainer.appendChild(productItem);
-
+      cartItemsContainer.appendChild(productItem);      
       total += product.price;
-
       
     });
+    
 
     cartTotalElement.textContent = "Total: $" + total.toFixed(2);
   }
@@ -58,6 +54,8 @@ function renderCartItems() {
 // Function to remove a product from the cart
 function removeCartItem(product) {
   var index = cartItems.findIndex(function (item) {
+    total -= product.price;
+    cartTotalElement.textContent = "Total: $" + total;
     return item.id === product.id;
   });
 

@@ -24,7 +24,7 @@ document.getElementById("closeInputButton").addEventListener("click",proceed);
 
 function proceed(){
     card_num=document.getElementById("number").value;
-    if(card_num.length<14){
+    if(card_num.length<14 || card_num.length>14 ){
         alert("Please Enter Correct Card Number");
     }else{
         window.location.href="#";
