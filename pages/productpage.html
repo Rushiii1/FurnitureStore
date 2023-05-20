@@ -2,12 +2,56 @@
 <html>
 <head>
   <title>Product Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
-    
-    body {
-    background-color: #E0E0E0;
-    font-family: 'Roboto', sans-serif;
-  }
+   
+   header {
+      color: black;
+      padding: 10px 0;
+      color: #fff;
+      
+    }
+
+    .container45 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+ 
+    }
+
+    #branding img {
+      width: 100px;
+    }
+
+    #navba ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    #navba ul li {
+      margin-right: 70px;
+    }
+
+    #navba ul li a {
+      color: #000;
+  text-decoration: none;
+    }
+
+    #input-icon input[type="text"] {
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+    }
+
+    #input-icon a {
+      color: #000;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+
     
  /* CSS styles for the product cards and filters */
  #Pcontainer{
@@ -16,12 +60,13 @@
  }
  /* CSS styles for the product cards and filters */
 .product-card {
-  width: calc(50% - 20px);
+  width: calc(33% - 20px);
+  
   margin: 10px auto;
   border: 1px solid #ccc;
   border-radius: 15px;
   background-color: aliceblue;
-  box-sizing: border-box;
+  box-sizing:border-box;
   transition: transform 0.3s ease;
 }
 
@@ -37,7 +82,7 @@
 }
 
 .product-card p {
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 10px;
   text-align: center;
 
@@ -47,7 +92,7 @@
   font-size: 16px;
   margin-bottom: 10px;
   margin-top: 20px;
-  margin-left: 90px;
+  margin-left: 20px;
 
 }
 
@@ -56,7 +101,7 @@
   margin: auto;
  margin-top: -30px;
  margin-bottom: 30px;
- margin-right: 90px;
+ margin-right: 50px;
   width: 30%;
   padding: 10px;
   background-color:#FF8D18;
@@ -93,11 +138,13 @@
   
 }
 
+
 #product-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 -100px;
+  
 }
 
 @media (max-width: 768px) {
@@ -108,13 +155,73 @@
   .filters {
     margin-bottom: 20px;
     width: 100%;
+    
+
   }
 }
+ /* Footer styles */
+ footer {
+      background-color: #333;
+      padding: 20px;
+      color: #fff;
+    }
 
+    #footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #footer-container h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    #footer-container ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    #footer-container ul li {
+      margin-right: 10px;
+    }
+
+    #footer-container ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
 
   </style>
 </head>
 <body>
+  <header>
+    <nav>
+      <div class="container45">
+        <div id="branding">
+          <a href="index.html">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/007/410/276/small/furniture-logo-design-vector.jpg" alt="Boat logo">
+          </a>
+        </div>
+        <div id="navba">
+          <ul>
+            <li><a href="../Pages/productpage.html">Chairs</a></li>
+            <li><a href="../Pages/productpage.html">Tables</a></li>
+            <li><a href="../Pages/productpage.html">Lamps</a></li>
+            <li><a href="../Pages/productpage.html">Sofas</a></li>
+            <li><a href="../Pages/productpage.html">Cases</a></li>
+            <li><a href="../Pages/productpage.html">Others</a></li>
+          </ul>
+        </div>
+        <div id="input-icon">
+          <input type="text" placeholder="Search">
+          <a href="../sigIn_LogIN/login.html" target="_blank"><i class="fas fa-user"></i></a>
+          <a href="Cart.html"><i class="fas fa-cart-plus"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
   <h1>Chairs</h1>
     <div id="Pcontainer">
   <div class="filters">
@@ -128,7 +235,7 @@
       <label><input type="checkbox" value="living">Living Chairs</label>
     </div>
 
-    <label for="price-filter">Price Range:</label>
+    <label for="price-filter"><strong>Price Range:</strong> </label>
     <select id="price-filter">
       <option value="">All</option>
       <option value="0-10000">0 - 10,000</option>
@@ -136,7 +243,7 @@
       <option value="50000-100000">50,000 - 100,000</option>
     </select>
 
-    <label for="sort-by">Sort by:</label>
+    <label for="sort-by"><strong> Sort By:</strong> </label>
     <select id="sort-by">
       <option value="price-asc">Price (Low to High)</option>
       <option value="price-desc">Price (High to Low)</option>
@@ -145,6 +252,26 @@
 
   <div id="product-list" class="clearfix"></div>
 </div>
+<footer>
+  <div id="footer-container">
+    <h1>0333 242 0688</h1>
+    <div>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Online Store Helpline</a></li>
+        <li><a href="#">Delivery Information</a></li>
+        <li><a href="#">Refunds and Exchange</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
   <script>
     // Get the product data from localStorage
     var furnitureData = [
@@ -277,6 +404,22 @@
         category: "living",
       },
       
+      {
+        id: "product17",
+        image_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/22f525e178589dc9854f3095452f257c9be16cbf/DTY-Indoor-Living-Silverthorne-Spindle-Chair.jpg?imwidth=480&impolicy=medium",
+      
+        price: 11000,
+        name: "DTY Indoor Living Silverthorne Spindle Chair",
+        category: "living",
+      },
+      {
+        id: "product18",
+        image_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/66e1a1368273e6e467db9d0e31b27c12812b895e/Simple-Living-Victor-Futon-Chair.jpg?imwidth=480&impolicy=medium",
+      
+        price: 51000,
+        name: "Simple Living Victor Futon Chair",
+        category: "living",
+      },
       // Add more product objects here...
     ];
 
