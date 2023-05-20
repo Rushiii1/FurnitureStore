@@ -13,7 +13,7 @@ function loginUser() {
     if (flag == 1) {
         alert("Sign in Successful");
         WrongTxt.textContent =  "";
-        window.open("index.html");
+        window.open("../HOME_PAGE/index.html");
     } else {
         alert("Wrong input");
         WrongTxt.textContent = "email/password wrong"
