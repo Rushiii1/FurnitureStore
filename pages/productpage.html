@@ -443,6 +443,10 @@ function renderProductCards(productList) {
     image.src = product.image_url;
     card.appendChild(image);
 
+    // card.addEventListener("click").addEventListener("click", function () {
+    //   addToCart(product.id);
+    // });
+
     var name = document.createElement("P");
     name.textContent = product.name;
     card.appendChild(name);
